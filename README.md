@@ -3,3 +3,5 @@ CSS
 HTML
 SCRIPT
 IMAGES
+
+  Bài tập chia làm 2 phần 
