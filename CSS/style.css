@@ -1,0 +1,132 @@
+/* GLOBAL */
+
+html, body * {
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+}
+.header {
+    padding: 40px 0 20px 0;
+    align-items: center;
+}
+
+.container .bg-light{
+    background-color: rgb(248 249 250 / 0%)!important;
+}
+h1 a.logo-brand {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff!important;
+}
+/* .fa {
+    font-size: inherit;
+} */
+.banner-header {
+    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),url("../images/banner1.jpg");
+    background-size: cover;
+    background-position: initial;
+    background-attachment: fixed;
+    min-height: 700px;
+}
+.position-relative {
+    position: relative !important;
+}
+.search-bar .search .search__input{
+    display: flex;
+    flex: 1;
+    padding: 10px 50px 10px 20px;
+    height: 45px;
+    font-size: 16px;
+    /* color: var(--font-color); */
+    border: none;
+    font-weight: 400;
+    /* border-radius: var(--border-radius); */
+    position: relative;
+    right: 0;
+    /* background: var(--bg-color); */
+    outline: 0;
+    /* border: 1px solid var(--bg-color); */
+} 
+
+.navbar .search-bar .search .search__icon {
+    position: absolute;
+    right: 20px;
+    font-size: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+.dark__mode{
+    display: block;
+}
+.right-content {
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+/* .fa-moon {
+    transform: rotate(-13deg);
+} */
+
+.gg-moon::after{
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+.gg-moon{
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-135deg);
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-bottom: 2px solid transparent;
+}
+.mobile .fa{
+    font-size: 32px;
+    color: #fff;
+    
+}
+/* .mobile .fa-bars:hover{
+    color: yellow;
+} */
+/* CARAOUSEL */
+.banner-header .banner__carousel h3{
+    font-size: 54px;
+    line-height: 64px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+}
+.banner-header .banner__carousel{
+    max-width: 600px;
+    text-align: left;
+    margin-top: 100px;
+}
+
+.title{
+    margin-bottom: 1.5rem ;
+}
+.banner-header .banner__carousel p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+}
+.btn-white {
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 12px 45px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+}
+button#trigger-overlay{
+    border: none;
+    background: none;
+    text-align: center;
+
+}

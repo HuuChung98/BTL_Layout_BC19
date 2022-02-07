@@ -1,0 +1,61 @@
+/* OVERLAY */
+/* ######################################################### */
+
+/* .overlay-scale {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+} */
+
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(6 3 0 / 77%);
+}
+.overlay-scale .open {
+    visibility: visible;
+    opacity: 1;
+}
+.overlay nav{
+    text-align: center;
+    top: 50%;
+    height: 30%;
+    transform: translateY(50%);
+}
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+.overlay ul li {
+    line-height: 3em;
+}
+.overlay ul li a {
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.overlay .over-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    overflow: hidden;
+    border: none;
+    background: #ff6600;
+    color: #fff;
+    border-radius: 2px;
+} 
