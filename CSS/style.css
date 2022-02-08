@@ -132,49 +132,184 @@ button#trigger-overlay{
 }
 
 /* BANNER  */
-.title__aboutUs {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 1px;
-    /* color: var(--primary-color); */
-    display: block;
-    font-family: 'Pacifico', cursive;
-
-}
-
-/* .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-} */
-
-.mb-4 {
-    margin-bottom: 1.5rem !important;
-}
 .row {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
-.col {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-.banner {
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.title__content {
+.col-5 {
+    flex: 0 0 41.66667%;
     max-width: 41.66667%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+.title__aboutUs {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+.title__weFound {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.col-7 p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 28px;
+    color: #161c2db3;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+/* LAYOUT OUT DEAL AND FOOD */
+.agent-block {
+    background-color: #ff6600;
+}
+.container-fluid {
+    padding-left: 0 !important;
+}
+.agent-block-image {
+    background-image: url(../images/banner3.jpg);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+}
+.p-md-5{
+    padding: 3rem !important;
+}
+.title__restaurant {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+.title{
     font-size: 38px;
     line-height: 48px;
     font-weight: 600;
-    margin-right: 31px;
+}
+.col-lg-6 h3 {
+    margin: 0;
+    padding: 0;
+    color: #232121;
+    font-family: 'Quicksand', sans-serif;
+}
+.agent-block-image-inf p {
+    color: #ffdfc9;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 28px;
+    /* color: var(--font-color); */
+    font-family: 'Quicksand', sans-serif;
+}
+.text {
+    margin-top: 1rem !important;
+}
+.subcribe-cat {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    grid-gap: 30px;
+}
+.my-5 {
+    margin-top: 3rem !important;
+}
+.icon {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    /* background: var(--bg-light); */
+    line-height: 70px;
+    border-radius: 7px;
+    /* transition: 0.3s ease-in-out; */
+}
+.subcribe-cat .icon {
+    background: white;
+}
+.icon .fa {
+    color: #ff6600;
+    font-size: 25px;
+    line-height: 70px;
+}
+.subcribe-cat-gd:hover .icon .fa{
+    color: #ffc600;
+    transition: all .5s;
+}
+.subcribe-cat-link {
+    display: block;
+    color: #232121;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.categoris .gal-slide-img .img {
+    width: 100%;
+    text-align: center;
+    border-radius: 7px;
+}
+.col-lg-4 {
+    flex: 0 0 33.33333%;
+    width: 33.33333%;
+    position: relative;
+}
+.pt {
+    padding-top: 0.5rem !important;
+}
+.mt {
+    margin-top: 1.5rem !important;
+}
+
+.categoris .gal-slide-inf {
+    position: absolute;
+    left: auto;
+    bottom: 0;
+    width: 95%;
+}
+.categoris .gal-slide-img {
+    position: relative;
+}
+h4 {
+    font-family: 'Quicksand', sans-serif;
+}
+a {
+    text-decoration: none !important;
+}
+
+.content__container .gal-slide-grids .gal-slide-inf h4 {
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+.content__container .gal-slide-grids .gal-slide-inf h6 {
+    font-weight: 600;
+    color: #f7f7f7;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+.content__container .gal-slide-grids .gal-slide-inf {
+    transform: translate3d(0, 10%, 0);
+
+
+}
+.gal-slide-grids .gal-slide-inf {
+    opacity: 1;
+    transition: all 0.4s;
+}
+.p-md-5 {
+    padding: 3rem !important;
 }
