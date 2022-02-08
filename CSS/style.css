@@ -130,3 +130,51 @@ button#trigger-overlay{
     text-align: center;
 
 }
+
+/* BANNER  */
+.title__aboutUs {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    /* color: var(--primary-color); */
+    display: block;
+    font-family: 'Pacifico', cursive;
+
+}
+
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+} */
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.banner {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.title__content {
+    max-width: 41.66667%;
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+    margin-right: 31px;
+}
