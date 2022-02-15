@@ -1,0 +1,30 @@
+
+/* LIGHT MODE  */
+/* .mode-container::before i.gg-sun {
+    display: none;
+    color: #eee;
+} */
+#switchButton .sun {
+    display: none;
+}
+#switchButton .moon {
+    display: block;
+    color: #eee;
+}
+
+  /* DARK MODE */
+.change #fa-sun {
+    display: block ;
+    color: white ;
+}
+.change #fa-moon {
+    display: none ;
+}
+.dark #get__text {
+    background-color: #232220;
+    color: #fff;
+
+}
+.dark #search__text {
+    color: #fff;
+}

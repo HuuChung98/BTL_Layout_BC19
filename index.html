@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- BOOTSTRAP -->
+    <!-- BS4 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- font google - quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- font google - Pacifico -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <!-- fancy box -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <!-- magnific-popup -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
     <!-- MY CSS -->
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style_under.css">
     <link rel="stylesheet" href="./CSS/nav-overlay.css">
+    <link rel="stylesheet" href="./CSS/dark-mode.css">
     <title>BTL</title>
 </head>
 <body>
@@ -30,17 +47,33 @@
                     </button>
                     <div class="right-content ml-auto">
                         <div class="collapse navbar-collapse search-bar" id="navbarSupportedContent">
-                            <form class="form-inline my-2 my-lg-0 ml-auto search position-relative">
-                                <input class="form-control mr-sm-2 search__input" type="search" placeholder="Search here..." aria-label="Search">
-                                <i class="fa fa-search search__icon"></i>
+                            <form class="form-inline my-2 my-lg-0 ml-auto search position-relative" id="search">
+                                <input class="form-control mr-sm-2 search__input" type="search" placeholder="Search here..." aria-label="Search" id="get__text">
+                                <i class="fa fa-search search__icon" id="search__text"></i>
                                 <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
                             </form>
                         </div>
-                        <div class="dark__mode">
+                        <div class="dark__mode w3_menu text-center">
                             <!-- toggle switch for dark and light -->
                             <div class="mobile-position">
                                 <!-- <i class="fa fa-moon moon"></i> -->
-                                <i class="gg-moon"></i>
+                                <!-- <i class="gg-moon"></i> -->
+                                <nav class="navigation">
+                                    <div class="theme-switch-wrapper">
+                                        <label class="theme-switch" for="checkbox">
+                                            <input type="checkbox" id="checkbox">
+                                            <div class="mode-container">
+                                                <button class="btn" id="switchButton" title="Click to switch theme">
+                                                    <i class="gg-sun sun" id="fa-sun"></i>
+                                                    <i class="gg-moon moon" id="fa-moon"></i>
+                                                </button>
+                                                
+                                            </div>
+
+                                            
+                                        </label>
+                                    </div>
+                                </nav>
                             </div>
                         </div>
                         <div class="mobile">
@@ -161,9 +194,10 @@
         </div>
     </section>
     <section class="categoris">
-        <div class="container">
+        <div class="container py-md-5">
             <div class="header__container">
-
+                <h6 class="title-deal-food1">What's New</h6>
+                <h3 class="title-deal-food2">Popular Categories</h3>
             </div>
             <div class="content__container row">
                 <div class="gal-slide-grids col-lg-4 pt mt">
@@ -185,7 +219,7 @@
                             <img src="./images/g2.jpg" alt="#" class="img img-fluid">
                         </a>
                     </div>
-                    <div class="gal-slide-inf">
+                    <div class="gal-slide-inf p-md-5">
                         <a href="#">
                             <h4>Vegatarian</h4>
                         </a>
@@ -198,7 +232,7 @@
                             <img src="./images/g3.jpg" alt="#" class="img img-fluid">
                         </a>
                     </div>
-                    <div class="gal-slide-inf">
+                    <div class="gal-slide-inf p-md-5">
                         <a href="#">
                             <h4>Vegatarian</h4>
                         </a>
@@ -211,7 +245,7 @@
                             <img src="./images/g4.jpg" alt="#" class="img img-fluid">
                         </a>
                     </div>
-                    <div class="gal-slide-inf">
+                    <div class="gal-slide-inf p-md-5">
                         <a href="#">
                             <h4>Vegatarian</h4>
                         </a>
@@ -224,7 +258,7 @@
                             <img src="./images/g5.jpg" alt="#" class="img img-fluid">
                         </a>
                     </div>
-                    <div class="gal-slide-inf">
+                    <div class="gal-slide-inf p-md-5">
                         <a href="#">
                             <h4>Vegatarian</h4>
                         </a>
@@ -237,7 +271,7 @@
                             <img src="./images/g6.jpg" alt="#" class="img img-fluid">
                         </a>
                     </div>
-                    <div class="gal-slide-inf">
+                    <div class="gal-slide-inf p-md-5">
                         <a href="#">
                             <h4>Vegatarian</h4>
                         </a>
@@ -247,9 +281,509 @@
             </div>
         </div>
     </section>
+    <!-- FEATURE  -->
+    <section id="feature" class="home-services">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-4 mt">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <i class="fa fa-users"></i>
+
+                            </div>
+                            <div class="info">
+                                <p>01</p>
+                                <h4><a href="#">Soup</a></h4>
+                            </div>
+                        </div>
+                        <p class="content__feature">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <i class="fa fa-shield-alt"></i>
+
+                            </div>
+                            <div class="info">
+                                <p>02</p>
+                                <h4><a href="#">Drinks</a></h4>
+                            </div>
+                        </div>
+                        <p class="content__feature">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <i class="fa fa-thermometer-full"></i>
+
+                            </div>
+                            <div class="info">
+                                <p>03</p>
+                                <h4><a href="#">Pizza</a></h4>
+                            </div>
+                        </div>
+                        <p class="content__feature">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <i class="fa fa-american-sign-language-interpreting"></i>
+
+                            </div>
+                            <div class="info">
+                                <p>04</p>
+                                <h4><a href="#">Breakfast</a></h4>
+                            </div>
+                        </div>
+                        <p class="content__feature">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <i class="fa fa-paint-brush"></i>
+
+                            </div>
+                            <div class="info">
+                                <p>05</p>
+                                <h4><a href="#">Lunch</a></h4>
+                            </div>
+                        </div>
+                        <p class="content__feature">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt">
+                    <div class="box-wrap">
+                        <div class="box-wrap-grid">
+                            <div class="icon">
+                                <i class="fa fa-eraser"></i>
+
+                            </div>
+                            <div class="info">
+                                <p>06</p>
+                                <h4><a href="#">Dinner</a></h4>
+                            </div>
+                        </div>
+                        <p class="content__feature">
+                            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- middle -->
+        <section class="middle">
+            <div class="container pt-lg-2 pb-lg-4 py-4">
+                <div class="welcome-left">
+                  <h3 class="hny-title">Deliciousness jumping into the mouth.</h3>
+                  <div class="middle-buttons">
+                    <a href="#" class="btn">Read More <span
+                        class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+                    <a href="#" class="btn">Contact Us <span
+                        class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+                  </div>
+                </div>
+        </section>
+        <!-- stats -->
+        <section class="w3_stat" id="stats">
+        <div class="container">
+          <div class="w3-stats">
+            <div class="row">
+              <div class="col-md-3 col-6 mt-md-0 mt-4">
+                <div class="wrap">
+                  <span class="fa fa-building"></span>
+                  <p class="counter">15,100</p>
+                  <p class="count-text">Branches</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 mt-md-0 mt-4">
+                <div class="wrap">
+                  <span class="fa fa-cutlery"></span>
+                  <p class="counter">19,256</p>
+                  <p class="count-text ">Food Items</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 mt-md-0 mt-4">
+                <div class="wrap">
+                  <span class="fa fa-users"></span>
+                  <p class="counter">12,100</p>
+                  <p class="count-text">Chefs</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 mt-md-0 mt-4">
+                <div class="wrap">
+                  <span class="fa fa-smile"></span>
+                  <p class="counter">2,560</p>
+                  <p class="count-text">Happy Customers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <!-- video -->
+        <section class="w3_video">
+          <div class="video_block py-5">
+            <div class="container py-lg-5">
+              <div class="video_info">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="playvideo">
+                <i class="fa fa-play"></i>
+              </button>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <iframe src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--/blog-posts-->
+        <section class="blogposts py-5" id="blogs">
+          <div class="container py-md-5 py-2">
+            <div class="blogs-title text-center">
+              <h6 class="title-subhny">Latest Posts</h6>
+              <h3>Blog Posts</h3>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 item mt-5">
+                <div class="card">
+                  <div class="card-header p-0">
+                    <a href="#">
+                      <img class="card-img" src="./images/banner1.jpg" alt="">
+                    </a>
+                    <div class="post-pos">
+                      <a href="#" class="receipe green">Reciepe</a>
+                      <span>
+                        <span class="font-awesome"><i class="fa fa-clock"></i></span>
+                        10 Min Cook
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-body p-0">
+                    <div class="blog-desc">
+                      <a href="#">The Best Cookie Recipes To Bake This Weekend
+                      </a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                      vitae sit.</p>
+                    <div class="p-footer mt-3">
+                      <div class="p-meta-info">
+                        <a href="#" class="post-img-anchor">
+                          <img src="./images/team1.jpg" alt="" class="post-img">
+                        </a>
+                        <a href="#">Rashed Kabir</a>
+                      </div>
+                      <a href="#" class="read">Read More <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 item mt-5">
+                <div class="card">
+                  <div class="card-header p-0">
+                    <a href="#">
+                      <img class="card-img" src="./images/banner3.jpg" alt="">
+                    </a>
+                    <div class="post-pos">
+                      <a href="#" class="receipe green">Soup</a>
+                      <span>
+                        <span class="font-awesome"><i class="fa fa-clock"></i></span>
+                        10 Min Cook
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-body p-0">
+                    <div class="blog-desc">
+                      <a href="#">The Best Cookie Recipes To Bake This Weekend
+                      </a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                      vitae sit.</p>
+                    <div class="p-footer mt-3">
+                      <div class="p-meta-info">
+                        <a href="#" class="post-img-anchor">
+                          <img src="./images/team2.jpg" alt="" class="post-img">
+                        </a>
+                        <a href="#">Rashed Kabir</a>
+                      </div>
+                      <a href="#" class="read">Read More <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 item mt-5">
+                <div class="card">
+                  <div class="card-header p-0">
+                    <a href="#">
+                      <img class="card-img" src="./images/banner1.jpg" alt="">
+                    </a>
+                    <div class="post-pos">
+                      <a href="#" class="receipe green">Drinks</a>
+                      <span>
+                        <span class="font-awesome"><i class="fa fa-clock"></i></span>
+                        10 Min Cook
+                      </span>
+                    </div>
+                  </div>
+                  <div class="card-body p-0">
+                    <div class="blog-desc">
+                      <a href="#">The Best Cookie Recipes To Bake This Weekend
+                      </a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                      vitae sit.</p>
+                    <div class="p-footer mt-3">
+                      <div class="p-meta-info">
+                        <a href="#" class="post-img-anchor">
+                          <img src="./images/team3.jpg" alt="" class="post-img">
+                        </a>
+                        <a href="#">Rashed Kabir</a>
+                      </div>
+                      <a href="#" class="read">Read More <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- testimonials section -->
+        <section class="w3_testimonials" id="testimonials">
+        <div class="midd-w3 py-5">
+          <div class="container py-lg-5 py-md-3">
+            <div class="header-title text-center">
+              <h6 class="title-subhny">Testimonials</h6>
+              <h3>
+                What People Say
+              </h3>
+            </div>
+            <div class="owl-carousel owl-theme py-2 mb-4 text-center">
+                <div class="testimonial-content">
+                  <div class="testimonial">
+                    <a class="comment-img" href="#"><img src="./images/team1.jpg"></a>
+                    <blockquote>
+                      <q>OMG! I cannot believe. It's Awesome</q>
+                    </blockquote>
+                    <p>My new site is so much faster and easier to work with than my old site. They are here to
+                      help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                      Pellen tesque libero ut justo, ultrices in ligula.</p>
+                    <div class="text-center mt-4">
+                      <div class="people-info align-self">
+                        <h3>Johnson william</h3>
+                        <p>Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <div class="testimonial">
+                    <a class="comment-img" href="#"><img src="./images/team2.jpg"></a>
+                    <blockquote>
+                      <q>OMG! I cannot believe. It's Awesome</q>
+                    </blockquote>
+                    <p>My new site is so much faster and easier to work with than my old site. They are here to
+                      help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                      Pellen tesque libero ut justo, ultrices in ligula.</p>
+                    <div class="text-center mt-4">
+                      <div class="people-info align-self">
+                        <h3>Alexander Sakura</h3>
+                        <p>Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <div class="testimonial">
+                    <a class="comment-img" href="#"><img src="./images/team3.jpg"></a>
+                    <blockquote>
+                      <q>OMG! I cannot believe. It's Awesome</q>
+                    </blockquote>
+                    <p>My new site is so much faster and easier to work with than my old site. They are here to
+                      help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                      Pellen tesque libero ut justo, ultrices in ligula.</p>
+                    <div class="text-center mt-4">
+                      <div class="people-info align-self">
+                        <h3>John Wilson</h3>
+                        <p>Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <div class="testimonial">
+                    <a class="comment-img" href="#"><img src="./images/team1.jpg"></a>
+                    <blockquote>
+                      <q>OMG! I cannot believe. It's Awesome</q>
+                    </blockquote>
+                    <p>My new site is so much faster and easier to work with than my old site. They are here to
+                      help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                      Pellen tesque libero ut justo, ultrices in ligula.</p>
+                    <div class="text-center mt-4">
+                      <div class="people-info align-self">
+                        <h3>Julia Sakura</h3>
+                        <p>Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <!-- footer -->
+        <section class="w3l-footer-29-main">
+        <div class="footer-29 py-5">
+          <div class="container py-lg-4">
+            <div class="row footer-top-29">
+              <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5">
+                <div class="footer-logo mb-3">
+                  <h2><a class="navbar-brand" href="index.html">Diner</a></h2>
+                </div>
+                <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                  tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>
+                <div class="main-social-footer-29 mt-4">
+                  <a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/" class="instagram"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/" class="linkedin"><i class="fab fa-linkedin-in"></i></span></a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-sm-0 mt-5">
+                <ul>
+                  <h6 class="footer-title-29">Usefull Links</h6>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="blog.html"> Blog posts</a></li>
+                  <li><a href="#careers"> Careers</a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-3 mt-lg-0 mt-5">
+                <h6 class="footer-title-29">More Info</h6>
+                <ul>
+                  <li><a href="#history">History</a></li>
+                  <li><a href="#vision">Vision & Values</a></li>
+                  <li><a href="#award">Awards</a></li>
+                  <li><a href="#media"> Media</a></li>
+                  <li><a href="#support"> Support</a></li>
+                </ul>
+    
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
+                <h6 class="footer-title-29">Subscribe to our Newsletter </h6>
+                <p>Enter your email and receive the latest news, updates and special offers from us.</p>
+                <form action="#" class="subscribe mt-4" method="post">
+                  <input type="email" name="email" placeholder="Your Email Address" required="" id="input">
+                  <button class="btn btn-style btn-primary w-100 mt-3">Subscibe Now</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <!-- copyright -->
+      <section class="w3l-copyright">
+        <div class="container">
+          <div class="row bottom-copies">
+            <p class="col-lg-8 copy-footer-29">© 2021 Diner. All rights reserved. Design by <a href="https://w3layouts.com/"
+                target="_blank">
+                W3Layouts</a></p>
+    
+            <div class="col-lg-4 footer-list-29">
+              <ul class="d-flex text-lg-right">
+                <li><a href="#careers"> Careers</a></li>
+                <li class="mx-lg-5 mx-md-4 mx-3"><a href="#privacymy-lg-0 my-4">Privacy Policy</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+    
+          </div>
+        </div>
+    
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+          &#10548;
+        </button>
+        <script>
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function () {
+            scrollFunction()
+          };
+    
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("movetop").style.display = "block";
+            } else {
+              document.getElementById("movetop").style.display = "none";
+            }
+          }
+    
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+        </script>
+        <!-- /move top -->
+      </section>
+          <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/jquery.countup.min.js"></script>
+    <script src="./js/style.js"></script>
+
+    <!-- waypoints js: không sử dụng noframework -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    
+    <!-- count up js !-->
+    <script>
+        $('.counter').countUp();
+    </script>
+
+    <!-- fancy box -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <!-- slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      $('.owl-carousel').slick({
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script src="./JS/index.js"></script>
+    <script src="./JS/style.js"></script>
+    <script src="./JS/jquery.countup.min.js"></script>
 </body>
 </html>
 <!-- <img src="./images/banner1.jpg" alt=""> -->
